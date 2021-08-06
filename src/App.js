@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import 'quill-paste-smart';
+import ReactQuill from 'react-quill';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ReactQuill
+        modules={{
+          toolbar: false,
+        }}
+        placeholder="Type a message..."
+        ></ReactQuill>
     </div>
   );
 }

@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+.ql-editor {
+  border-color: black;
+  border-style: solid;
+}
